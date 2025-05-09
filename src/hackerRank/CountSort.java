@@ -15,8 +15,7 @@ public class CountSort {
     private static void countSort(int[] freq, int length) {
         int[] res = new int[length];
         for (int i = length-1; i>=0; i--) {
-            System.out.println(i);
-            System.out.println("demo branch commit");
+
         }
         System.out.println(Arrays.toString(res));
     }
