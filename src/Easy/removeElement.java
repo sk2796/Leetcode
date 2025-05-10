@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class removeElement {
     public static void main(String[] args) {
-        int[] nums = {0};
-        int val = 0;
+        int[] nums = {3,2,2,3};
+        int val = 3;
         int k =0;
         int i=0, j=nums.length-1;
         while(i<=j) {
