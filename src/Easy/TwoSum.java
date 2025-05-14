@@ -1,17 +1,12 @@
 package Easy;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class TwoSum {
     public static void main(String[] args) {
         int[] arr = {2,7,11,6,8};
         int[] res = twosum(arr, 8);
-//        System.out.println(Arrays.toString(res));
-
-
-        int[] nums = {0,1,1,1,2,2,3,4,4,5,5,5,8,9,9};
-//        removeDups(nums);
+        System.out.println(Arrays.toString(res));
     }
 
     private static int[] twosum(int[] arr, int target) {
