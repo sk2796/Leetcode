@@ -1,5 +1,7 @@
 package Easy.twoPointers;
 
+import java.util.Arrays;
+
 public class IndexOfFirstIndex {
     public static void main(String[] args) {
         String haystack = "fdsadjkasad", needle = "sad";
@@ -8,7 +10,19 @@ public class IndexOfFirstIndex {
 
         String sentence = "hellohello hellohellohello", searchWord = "ell";
         int index1 = searchWordInSentence(sentence, searchWord);
-        System.out.println(index1);
+//        System.out.println(index1);
+
+        String s = "   fly me   to   the moon  ";
+        int length = lengthOfLastWord(s);
+        System.out.println(length);
+    }
+
+    private static int lengthOfLastWord(String s) {
+        s = s.trim();
+        System.out.println(s);
+        String[] sArr = s.split(" ");
+        System.out.println(Arrays.toString(sArr));
+        return sArr[sArr.length-1].trim().length();
     }
 
     private static int searchWordInSentence(String sentence, String searchWord) {
