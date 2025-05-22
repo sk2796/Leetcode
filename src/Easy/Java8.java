@@ -15,6 +15,7 @@ public class Java8 {
         System.out.println(hmap);
         int max = hmap.entrySet().stream().max(Map.Entry.comparingByValue()).get().getKey();
         int min = hmap.entrySet().stream().min(Map.Entry.comparingByValue()).get().getKey();
-        System.out.println(max +"  "+min);
+        int single = hmap.entrySet().stream().filter(x -> x.getValue()==1).findFirst().get().getKey();
+        System.out.println(single);
     }
 }
