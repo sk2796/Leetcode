@@ -1,4 +1,4 @@
-package Easy;
+package Easy.binary;
 
 public class SearchInsertPos {
     public static void main(String[] args) {

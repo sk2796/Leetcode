@@ -11,6 +11,16 @@ public class BubbleSort {
         System.out.println(Arrays.toString(arr));
     }
 
+   /* bubbleSort(arr):
+    FOR each j from 0 to arr.length - 1:
+    swapped = false
+    FOR each i from 0 to arr.length - j - 2:
+    IF arr[i] > arr[i + 1]:
+    swapped = true
+    SWAP arr[i], arr[i + 1]
+    IF swapped is false:
+    BREAK
+    RETURN arr  */
     private static int[] bubbleSort(int[] arr) {
         for (int j = 0; j < arr.length; j++) {
             boolean swag = false;

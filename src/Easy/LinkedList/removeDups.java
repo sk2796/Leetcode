@@ -12,11 +12,12 @@ public class removeDups {
         displayLL(head);
     }
 
-    private static void displayLL(ListNode head) {
+    public static void displayLL(ListNode head) {
         while(head!=null) {
             System.out.print(head.val+" ");
             head = head.next;
         }
+        System.out.println();
     }
 
 
@@ -30,7 +31,7 @@ public class removeDups {
         return head;
     }
 
-    private static ListNode createLL(int[] arr) {
+    public static ListNode createLL(int[] arr) {
         ListNode head = new ListNode(arr[0]);
         ListNode temp = head;
         for (int i = 1; i < arr.length; i++) {

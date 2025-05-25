@@ -1,4 +1,4 @@
-package Easy;
+package Easy.math;
 
 public class AddBinary {
     public static void main(String[] args) {
