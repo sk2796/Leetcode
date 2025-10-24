@@ -3,6 +3,7 @@ package Easy.LinkedList;
 import model.ListNode;
 
 import static model.ListNode.createLL;
+import static model.ListNode.displayLL;
 
 public class removeDups {
     public static void main(String[] args) {
@@ -12,14 +13,6 @@ public class removeDups {
         System.out.println();
         head = deleteDuplicates(head);
         displayLL(head);
-    }
-
-    public static void displayLL(ListNode head) {
-        while(head!=null) {
-            System.out.print(head.val+" ");
-            head = head.next;
-        }
-        System.out.println();
     }
 
 

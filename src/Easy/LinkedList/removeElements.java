@@ -2,8 +2,8 @@ package Easy.LinkedList;
 
 import model.ListNode;
 
-import static Easy.LinkedList.removeDups.displayLL;
 import static model.ListNode.createLL;
+import static model.ListNode.displayLL;
 
 public class removeElements {
     public static void main(String[] args) {

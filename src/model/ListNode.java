@@ -18,4 +18,12 @@ public class ListNode {
         }
         return head;
     }
+
+    public static void displayLL(ListNode head) {
+        while(head!=null) {
+            System.out.print(head.val+" ");
+            head = head.next;
+        }
+        System.out.println();
+    }
 }

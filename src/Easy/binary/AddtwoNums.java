@@ -2,8 +2,8 @@ package Easy.binary;
 
 import model.ListNode;
 
-import static Easy.LinkedList.removeDups.displayLL;
 import static model.ListNode.createLL;
+import static model.ListNode.displayLL;
 
 public class AddtwoNums {
     public static void main(String[] args) {
