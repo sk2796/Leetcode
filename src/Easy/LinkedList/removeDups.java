@@ -2,6 +2,8 @@ package Easy.LinkedList;
 
 import model.ListNode;
 
+import static model.ListNode.createLL;
+
 public class removeDups {
     public static void main(String[] args) {
         int[] arr = {1,1,2,3,3};
@@ -31,14 +33,5 @@ public class removeDups {
         return head;
     }
 
-    public static ListNode createLL(int[] arr) {
-        ListNode head = new ListNode(arr[0]);
-        ListNode temp = head;
-        for (int i = 1; i < arr.length; i++) {
-            ListNode node = new ListNode(arr[i]);
-            temp.next = node;
-            temp=temp.next;
-        }
-        return head;
-    }
+
 }
