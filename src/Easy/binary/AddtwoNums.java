@@ -18,29 +18,29 @@ public class AddtwoNums {
     }
 
     private static ListNode addTwoLL(ListNode head, ListNode head2) {
-        int cf = 0;
+        int carryForward = 0;
         ListNode res = new ListNode(-1);
         ListNode temp = res;
-        while(head!=null || head2!=null || cf>0) {
+        while(head!=null || head2!=null || carryForward>0) {
             int sum = 0;
             if(head!=null) {
-                sum = sum + cf + head.val;
-                cf =0;
+                sum = sum + carryForward + head.val;
+                carryForward =0;
                 head = head.next;
             }
             if(head2!=null) {
-                sum = sum + cf + head2.val;
-                cf = 0;
+                sum = sum + carryForward + head2.val;
+                carryForward = 0;
                 head2 = head2.next;
             }
             if(sum>0|| head!=null || head2!=null) {
                 ListNode newNode = new ListNode(sum%10);
-                cf = sum/10;
+                carryForward = sum/10;
                 temp.next = newNode;
                 temp = temp.next;
             } else {
-                ListNode newNode = new ListNode(cf);
-                cf=0;
+                ListNode newNode = new ListNode(carryForward);
+                carryForward=0;
                 temp.next = newNode;
 //                temp = temp.next;
             }
