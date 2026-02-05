@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        int[] arr = {8,9,9,9};
+        //66. Plus One
+        int[] arr = {8,9,1,9};
         System.out.println(Arrays.toString(plusOne(arr)));
     }
 

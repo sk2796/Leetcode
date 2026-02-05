@@ -2,8 +2,10 @@ package Easy.binary;
 
 public class SearchInsertPos {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,5,6,8,10};
-        int search = 4;
+
+        //35. Search Insert Position
+        int[] arr = {1,2,3,5,6,8,11};
+        int search = 9;
         int index = searchInsert(arr, search);
         System.out.println(index);
     }

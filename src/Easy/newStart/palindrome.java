@@ -1,6 +1,8 @@
 package Easy.newStart;
 
 public class palindrome {
+
+    //9. Palindrome Number
     public static void main(String[] args) {
         int x = 12321;
         System.out.println(isPallindrome(x));

@@ -4,9 +4,12 @@ import java.util.*;
 
 //Two Pointers //Array
 public class RemoveDups {
+
+    //26. Remove Duplicates from Sorted Array
     public static void main(String[] args) {
-        int[] nums = {0,0,1,1,2,2,2,3,3,4,6,7,8,8,9};
+        int[] nums = {0,0,1,1,2,2,2,7,7,3,3,4,6,7,8,8,9};
         System.out.println(removeDups(nums));
+        System.out.println(Arrays.toString(nums));
     }
 
     private static int removeDups(int[] nums) {

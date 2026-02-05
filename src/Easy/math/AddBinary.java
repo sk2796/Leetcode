@@ -2,6 +2,7 @@ package Easy.math;
 
 public class AddBinary {
     public static void main(String[] args) {
+        //67. Add Binary
         String a = "1010", b = "1111";
         System.out.println(addBinary(a, b));
     }

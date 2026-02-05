@@ -4,6 +4,9 @@ package Easy.newStart;
 import java.util.Stack;
 
 public class ValidParanthesis {
+
+
+    //20. Valid Parentheses
     public static void main(String[] args) {
         String str = "()[]{}";
         System.out.println(isValid(str));

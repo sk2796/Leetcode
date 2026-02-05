@@ -2,9 +2,9 @@ package Easy.binary;
 
 public class SearchInRotatedArr {
     public static void main(String[] args) {
-        int[] arr = {5,1,3};
-//        int peak = searchPeakIndex(arr);
-//        System.out.println("peak "+peak+" : " + arr[peak]);
+        int[] arr = {4,5,1,2,3};
+        int peak = searchPeakIndex(arr);
+        System.out.println("peak index = "+peak+" , value : " + arr[peak]);
         int index = searchInRotatedArr(arr, 5);
         System.out.println(index);
     }
