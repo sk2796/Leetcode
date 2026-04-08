@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class LongestPallindromicSubstring {
     public static void main(String[] args) {
-        String s = "bb";
+        String s = "accd";
 
         //5. Longest Palindromic Substring
 //        String longest = longestSubString(s);

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class RomanToInt {
     public static void main(String[] args) {
-        String s = "III";
+        String s = "LXIV";
         Map<String, Integer> hmap = new HashMap<>();
         hmap.put("I", 1);
         hmap.put("V", 5);
