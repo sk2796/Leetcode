@@ -9,11 +9,8 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Java8 {
-
-    
     public static void main(String[] args) {
         int[] arr = {5,8,7,6,9,2,3,5,4,2,6,8,9,7,7,4,6,6,9,8,4};
         int[] nums = {5,8,4,6};
