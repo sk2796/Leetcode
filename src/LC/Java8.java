@@ -1,4 +1,4 @@
-package Easy;
+package LC;
 
 import model.Employee;
 
@@ -9,11 +9,19 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Java8 {
     public static void main(String[] args) {
         int[] arr = {5,8,7,6,9,2,3,5,4,2,6,8,9,7,7,4,6,6,9,8,4};
         int[] nums = {5,8,4,6};
+        String str = "swiss";
+
+        Stream<Character> characterStream = str.chars().mapToObj(c -> (char) c);
+        String key = Arrays.stream(str.split("")).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+                .entrySet().stream().filter(x -> x.getValue() == 1).findFirst().get().getKey();
+
+
         Map<Integer, Integer> hmap = new HashMap<>();
         for(int x : nums) {
             if(hmap.containsKey(x)) {
@@ -47,6 +55,8 @@ public class Java8 {
         empList.add(new Employee(9, "Shubham", 29, 26000, "M", "IT", "Pune", 2025));
 
 
+        List<Employee> list = empList.stream().sorted(Comparator.comparing(Employee::age).reversed()).limit(5).skip(2).toList();
+        System.out.println("5445454"+list);
 //        Map<String, Double> collect = empList.stream().
 //                collect(Collectors.groupingBy(Employee::department,
 //                Collectors.mapping(Employee::salary, Collectors.collectingAndThen(Collectors.toSet(),

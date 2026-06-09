@@ -1,4 +1,4 @@
-package Easy.twoPointers;
+package LC.twoPointers;
 
 import java.util.Arrays;
 import java.util.HashSet;

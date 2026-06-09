@@ -1,10 +1,8 @@
-package Easy.newStart;
-
-import java.util.Arrays;
+package LC.newStart;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
-        String[] strs = {"ab", "a"};
+        String[] strs = {"ab", "absd"};
 //        Arrays.sort(strs);
 
         StringBuilder sb = new StringBuilder();

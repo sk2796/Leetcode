@@ -1,8 +1,6 @@
-package Easy.sorting;
+package LC.sorting;
 
 import java.util.Arrays;
-
-import static java.util.Collections.swap;
 
 public class BubbleSort {
     public static void main(String[] args) {

@@ -7,12 +7,6 @@ import java.util.Stack;
 public class BinaryTree {
     public static void main(String[] args) {
 
-//        Thread t1 = new Thread("tdfs");
-//        Thread.State state = t1.getState();
-//        t1.start();
-//        System.out.println(state.name());
-//        System.out.println(t1);
-
         BTNode root = BTNode.createBTNode();
         System.out.println("Preorder : ");
         preOrder(root);

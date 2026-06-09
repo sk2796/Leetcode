@@ -1,4 +1,4 @@
-package Easy.binary;
+package LC.binary;
 
 import model.ListNode;
 
