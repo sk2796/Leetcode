@@ -1,4 +1,4 @@
-package Easy.recursion;
+package LC.recursion;
 
 import java.util.Arrays;
 

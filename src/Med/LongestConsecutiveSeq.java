@@ -15,9 +15,19 @@ public class LongestConsecutiveSeq {
             hset.add(i);
         }
         int max = 0;
-        for (int i = 0; i < nums.length; i++) {
-
+        for (int num : nums) {
+            if (!hset.contains(num - 1)) {
+                int current = num;
+                int count = 1;
+                while (hset.contains(current + 1)) {
+                    current = current + 1;
+                    count++;
+                }
+                if(max < count) {
+                    max = count;
+                }
+            }
         }
-        return 5;
+        return max;
     }
 }

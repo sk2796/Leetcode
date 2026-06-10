@@ -1,4 +1,4 @@
-package Easy.newStart;
+package LC.newStart;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Easy.LinkedList;
+package LC.LinkedList;
 
 import model.ListNode;
 

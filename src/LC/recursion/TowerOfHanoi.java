@@ -1,4 +1,4 @@
-package Easy.recursion;
+package LC.recursion;
 
 public class TowerOfHanoi {
 

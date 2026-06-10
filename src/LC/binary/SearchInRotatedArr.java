@@ -1,4 +1,4 @@
-package Easy.binary;
+package LC.binary;
 
 public class SearchInRotatedArr {
     public static void main(String[] args) {

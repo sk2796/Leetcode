@@ -1,4 +1,4 @@
-package Easy.string;
+package LC.string;
 
 public class ValidPallindrome {
 

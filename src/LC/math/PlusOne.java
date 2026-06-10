@@ -1,4 +1,4 @@
-package Easy.math;
+package LC.math;
 
 import java.util.Arrays;
 
