@@ -4,51 +4,46 @@ import java.util.Arrays;
 
 public class ExcelSheet {
 
-    //168. Excel Sheet Column Title
-    //TODO - Not Working
     public static void main(String[] args) {
 
-        String[] alphabets = new String[26];
-        for (int i = 0; i < 26; i++) {
-            alphabets[i] = String.valueOf((char) ('A' + i));
+        String[] alphabets = new String[27];
+        for (int i = 1; i <= 26; i++) {
+            alphabets[i] = String.valueOf((char) ('A' + i -1));
         }
         System.out.println(Arrays.toString(alphabets));
-        int columnNumber = 52;
-        System.out.println(numberToColumn(columnNumber, alphabets));
+        int columnNumber = 70;
+        String columnTitle = numberToColumn(columnNumber, alphabets);
+        System.out.println(columnTitle);
+        System.out.println(columnToNumber(columnTitle));
 
     }
 
-    private static String numberToColumn(int columnNumber, String[] alphabets) {
-        StringBuilder sb = new StringBuilder();
-        int rem = 1;
-        while(columnNumber > 0 || rem!=0) {
-            rem = columnNumber % 26;
-            sb.append(rem == 0 ? alphabets[25] : alphabets[rem - 1]);
-            columnNumber = columnNumber - rem;
-            columnNumber = columnNumber / 26;
+    // 171. Excel Sheet Column Number
+    private static long columnToNumber(String columnTitle) {
+        //AAA
+        long sum = 0;
+        for (int i = columnTitle.length()-1; i >=0 ; i--) {
+            int charTonum = columnTitle.charAt(i) - 64;
+            double pow = Math.pow(26, columnTitle.length() - i - 1);
+            sum = (long) (sum + (charTonum * pow));
         }
 
-        System.out.println(sb.reverse());
+        return sum;
+    }
 
 
-
-
-//        if(columnNumber <= 26) {
-//            return alphabets[columnNumber-1];
-//        }
-
-//        int rem = columnNumber%26 == 0 ? 26 : columnNumber % 26;
-//        sb.append(alphabets[rem-1]);
-//        System.out.println(sb);
-//        columnNumber = columnNumber - rem;
-//
-//        while(columnNumber>26 || rem != 0) {
-//            columnNumber = columnNumber/26;
-//            rem = columnNumber % 26;
-//                sb.append(alphabets[columnNumber - 1]);
-//        }
-//        columnNumber = columnNumber / 26;
-//        sb.append(alphabets[columnNumber-1]);
+    //168. Excel Sheet Column Title
+    private static String numberToColumn(int columnNumber, String[] alphabets) {
+        if(columnNumber <=26) {
+            return alphabets[columnNumber];
+        }
+        StringBuilder sb = new StringBuilder();
+        while(columnNumber > 0) {
+            int rem = columnNumber % 26;
+            sb.append(alphabets[rem==0 ? 26 : rem]);
+            columnNumber = rem == 0 ? columnNumber - 26 : columnNumber - rem;
+            columnNumber = columnNumber/26;
+        }
         return sb.reverse().toString();
     }
 }
