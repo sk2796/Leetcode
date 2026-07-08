@@ -1,9 +1,7 @@
 public record Employee(int id,
                        String name,
-                       int age,
+
+                       String managername,
                        double salary,
-                       String gender,
-                       String department,
-                       String location,
                        int yearOfJoining) {
 }
